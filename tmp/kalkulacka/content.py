@@ -15,6 +15,5 @@ class Content(Adw.Bin):
         main_box.set_valign(Gtk.Align.CENTER)
         main_box.set_halign(Gtk.Align.CENTER)
 
-
         input_box = Gtk.Box(orientation = Gtk.Orientation.HORIZONTAL, spacing = 8)
         main_box.append(input_box)
