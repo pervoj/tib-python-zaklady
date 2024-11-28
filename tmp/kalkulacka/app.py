@@ -12,7 +12,6 @@ class App(Adw.Application):
         super().__init__()
         self.connect("activate", self.on_activate)
 
-    
     def on_activate(self, app):
         window = Win(app)
         window.present()
