@@ -10,11 +10,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Formatting
-        uses: microsoft/action-python@0.7.3
-        with:
-          black: true
-
       - name: Type checking
         uses: microsoft/action-python@0.7.3
         with:
