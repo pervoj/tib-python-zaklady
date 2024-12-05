@@ -1,0 +1,26 @@
+name: Type checking and linting
+
+on: [push, pull_request]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Formatting
+        uses: microsoft/action-python@0.7.3
+        with:
+          black: true
+
+      - name: Type checking
+        uses: microsoft/action-python@0.7.3
+        with:
+          pyright: true
+
+      - name: Linting
+        uses: microsoft/action-python@0.7.3
+        with:
+          pylint: true
